@@ -1,7 +1,7 @@
 %undefine _hardened_build
 
 Name: editline
-Version: 1.16.1
+Version: 1.17.0
 Release: 1%{?dist}
 
 Summary: A readline() replacement for UNIX without termcap (ncurses)
@@ -41,7 +41,7 @@ rm -f %{buildroot}/%{_libdir}/*.la
 
 %files
 %{_libdir}/libeditline.so.1
-%{_libdir}/libeditline.so.1.0.1
+%{_libdir}/libeditline.so.1.0.2
 
 %{_docdir}/editline/LICENSE
 %{_docdir}/editline/README.md
@@ -54,6 +54,9 @@ rm -f %{buildroot}/%{_libdir}/*.la
 %{_libdir}/libeditline.so
 
 %changelog
+
+* Fri Jan 10 2020 David Va <davidva AT tuta DOT io> 1.17.0-1 
+- Updated 1.17.0
 
 * Thu Jul 11 2019 David Va <davidva AT tuta DOT io> 1.16.1-1 
 - Initial build
